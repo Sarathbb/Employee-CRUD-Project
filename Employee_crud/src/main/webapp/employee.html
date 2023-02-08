@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Registration Table</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <h1>Employee Registration Table</h1>
+    <div class="table-container">
+        <form action="save" method="post">
+             <table class="table">
+                <tr>
+                  <td>Name :</td>
+                  <td> <input type="text" name="name" required="required"> </td>
+                </tr>
+                <tr>
+                  <td>Password :</td>
+                  <td> <input type="password" name="password" required="required"> </td>
+                </tr>
+                <tr>
+                  <td>Email :</td>
+                  <td> <input type="email" name="email" required="required"> </td>
+                </tr>
+                <tr>
+                  <td>Country :</td>
+                  <td> 
+                    <select name="ctry" required="required">
+                        <option>India</option>
+                        <option>UAE</option>
+                        <option>USA</option>
+                        <option>US</option>
+                    </select> 
+                  </td>
+                </tr>
+             </table>
+             <div class="btn-container">
+                <input type="submit" value="Save Employee">
+                <a href="ViewServlet">View Employee</a>
+             </div>
+        </form>
+    </div>
+</body>
+</html>

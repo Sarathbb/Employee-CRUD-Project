@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Employee Table</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+   <h1>Employee Table</h1>
+   <table class="table view-table">
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>PASSWORD</th>
+        <th>EMAIL</th>
+        <th>COUNTRY</th>
+        out.print("<tr>  <td><input type='hidden'  value='"+e1.getId()+"'></td> </tr>");
+			out.print("<tr> <td>Name :</td> <td><input type='text' name='name' value='"+e1.getName()+"'></td> </tr>");
+			out.print("<tr> <td>Password :</td> <td><input type='text' name='password' value='"+e1.getPwd()+"'></td> </tr>");
+			out.print("<tr> <td>Email :</td> <td><input type='email' name='email' value='"+e1.getEmail()+"'></td> </tr>");
+			out.print("<tr> <td>Country :</td> <td><select name='ctry' value='"+e1.getCountry()+"'><option>India</option><option>UAE</option><option>USA</option><option>US</option></select></td> </tr>");
+      </tr>      
+   </table>
+</body>
+</html>
